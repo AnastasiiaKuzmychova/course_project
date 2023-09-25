@@ -1,0 +1,1714 @@
+body {
+  margin: auto;
+  font-family: "Raleway";
+  width: 1440px;
+}
+@font-face {
+  font-family: "Dela Gothic One";
+  src: url(./Dela_Gothic_One/DelaGothicOne-Regular.ttf);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  margin-left: 80px;
+  gap: 225px;
+}
+.header__burger {
+  display: none;
+}
+.header__list_item-mob {
+  display: none;
+}
+.header__nav {
+  display: flex;
+  gap: 30px;
+  color: var(--black, #000);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 400;
+}
+.header__list_item {
+  display: flex;
+  align-items: center;
+}
+.header__nav a:hover {
+  color: #da1f39;
+  font-weight: 700;
+}
+.header__list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-left: 0;
+}
+.header__list li a {
+  font-variant-numeric: lining-nums proportional-nums;
+}
+
+.new-collection {
+  background-image: url(./images/DSC_8575\ 1.png);
+  max-width: 1280px;
+  height: 551px;
+  display: flex;
+  margin: auto;
+}
+.new-collection__container {
+  display: flex;
+  width: 715px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 88px;
+}
+.new-collection__title {
+  display: flex;
+  margin-top: 155px;
+  margin-bottom: 0px;
+  color: #FFF;
+  font-family: Dela Gothic One;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 112.3%;
+  text-transform: uppercase;
+}
+.new-collection__text {
+  color: #fff;
+  font-size: 16px;
+  margin: 0;
+  padding-bottom: 50px;
+  padding-top: 10px;
+}
+.new-collection__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Raleway";
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  background: var(--red, #da1f39);
+  border: none;
+  width: 225px;
+  height: 50px;
+  padding: 15px 24px;
+  flex-shrink: 0;
+}
+
+.etno {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 126px;
+}
+.etno__text_white {
+  color: #fff;
+}
+.etno__text {
+  position: absolute;
+  color: var(--black, #000);
+  text-align: center;
+  font-family: "Dela Gothic One";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 140.3%;
+  text-transform: uppercase;
+  width: 843px;
+  margin-left: 302px;
+  margin-top: 81px;
+}
+.etno__img_right {
+  margin-right: 297px;
+  margin-top: 290px;
+}
+.etno__img_left {
+  margin-left: 310px;
+}
+
+.new-arrivals {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 80px;
+}
+.new-arrivals__title {
+  display: flex;
+  color: var(--black, #000);
+  font-family: "Dela Gothic One";
+  line-height: 140.3%;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 40px;
+}
+.new-arrivals__container {
+  display: flex;
+  gap: 50px;
+  overflow: hidden;
+  margin-bottom: 126px;
+}
+.new-arrivals__svg_right {
+  position: absolute;
+  margin-left: 1309px;
+  padding-top: 40px;
+}
+.new-arrivals__svg_left {
+  position: absolute;
+  margin-left: 1239px;
+  padding-top: 40px;
+}
+.new-arrivals__img {
+  position: absolute;
+  margin: 30px;
+}
+.new-arrivals__price {
+  color: #000;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 166.2%;
+  margin: 0;
+}
+.new-arrivals__text {
+  color: var(--black, #000);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 166.188%;
+  text-transform: none;
+}
+
+.capsule-collection {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-image: url(./images/e0c8844c9764b03e0693e85af2b9d841.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+}
+.capsule-collection__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #fff;
+  width: 640px;
+  height: 650px;
+  margin-top: 80px;
+}
+.capsule-collection__text {
+  color: var(--black, #000);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 166.188%;
+  text-transform: none;
+  width: 419px;
+}
+.capsule-collection__button {
+  color: #fff;
+  font-family: "Raleway";
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  background: var(--red, #da1f39);
+  border: none;
+  width: 225px;
+  height: 50px;
+  padding: 15px 24px;
+  flex-shrink: 0;
+}
+.capsule-collection__etnodim {
+  color: var(--gray, #939694);
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.capsule-collection__title {
+  display: flex;
+  color: var(--black, #000);
+  font-family: "Dela Gothic One";
+  line-height: 140.3%;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-top: 0;
+  width: 543px;
+}
+.capsule-collection__image {
+  padding-top: 80px;
+}
+
+.sales {
+  position: relative;
+  margin-left: 80px;
+  margin-top: 210px;
+  display: flex;
+  flex-direction: column;
+}
+.sales__text {
+  color: var(--black, #000);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 166.188%;
+  text-transform: none;
+}
+.sales__title {
+  color: var(--black, #000);
+  font-family: "Dela Gothic One";
+  line-height: 140.3%;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+}
+.sales__price {
+  color: #000;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 166.2%;
+  color: #DA1F39;
+  margin: 0;
+}
+.sales__price_old {
+  color: var(--gray, #939694);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 166.2%;
+  text-decoration: line-through;
+}
+.sales__text_margin {
+  margin-bottom: 0;
+}
+.sales__container {
+  display: flex;
+  gap: 50px;
+  overflow: hidden;
+  margin-bottom: 126px;
+}
+.sales__svg_right {
+  position: absolute;
+  margin-left: 1309px;
+  padding-top: 50px;
+}
+.sales__svg_left {
+  position: absolute;
+  margin-left: 1239px;
+  padding-top: 50px;
+}
+.sales__items {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sales__img {
+  position: absolute;
+  margin: 30px;
+}
+
+.philosophy {
+  display: flex;
+}
+.philosophy__img_bottom {
+  position: relative;
+}
+.philosophy__img_top {
+  position: absolute;
+  margin-left: 188px;
+  margin-top: 155px;
+}
+.philosophy__link {
+  color: #da1f39;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+.philosophy__container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #fff;
+  width: 640px;
+  margin-top: 80px;
+  padding-left: 217px;
+}
+.philosophy__etnodim {
+  color: var(--gray, #939694);
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.philosophy__title {
+  color: var(--black, #000);
+  font-family: "Dela Gothic One";
+  line-height: 140.3%;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 0;
+}
+.philosophy__text {
+  color: var(--black, #000);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 166.188%;
+  text-transform: none;
+}
+
+.stuff {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 100px;
+}
+.stuff__text {
+  position: absolute;
+  color: var(--black, #000);
+  text-align: center;
+  font-family: "Dela Gothic One";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 140.3%;
+  text-transform: uppercase;
+  width: 851px;
+  margin-left: 302px;
+  margin-top: 81px;
+}
+.stuff__text_white {
+  color: #fff;
+}
+.stuff__img_left {
+  margin-left: 300px;
+  margin-top: 305px;
+}
+.stuff__img_right {
+  margin-right: 181px;
+  margin-bottom: 100px;
+}
+
+.drabyna {
+  display: flex;
+  background-image: url(./images/Rectangle\ 87.png);
+  height: 630px;
+  margin-top: 100px;
+}
+.drabyna__img {
+  display: flex;
+  width: 1280px;
+  height: 630px;
+  margin: 80px;
+}
+.drabyna__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 80px 0 0 80px;
+  background-color: #fff;
+  width: 523px;
+  height: 550px;
+  position: absolute;
+}
+.drabyna__etnodim {
+  color: var(--gray, #939694);
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.drabyna__title {
+  color: var(--black, #000);
+  font-family: "Dela Gothic One";
+  line-height: 140.3%;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+.drabyna__text {
+  color: var(--black, #000);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 166.188%;
+  text-transform: none;
+  width: 345px;
+}
+.drabyna__button {
+  color: #fff;
+  font-family: "Raleway";
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  background: var(--red, #da1f39);
+  border: none;
+  width: 225px;
+  height: 50px;
+  padding: 15px 24px;
+  flex-shrink: 0;
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  margin-top: 210px;
+  justify-content: space-between;
+}
+.location__container {
+  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.location__container_img {
+  display: flex;
+  justify-content: flex-end;
+}
+.location__img_bottom {
+  position: relative;
+}
+.location__img_top {
+  position: absolute;
+  margin-right: 168px;
+  margin-top: 50px;
+}
+.location__link {
+  color: #da1f39;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+.location__items {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.location__text {
+  color: var(--black, #000);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 166.188%;
+  text-transform: none;
+  margin-bottom: 10px;
+}
+.location__text_second {
+  margin-left: 30px;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.location__title {
+  color: var(--black, #000);
+  font-family: "Dela Gothic One";
+  line-height: 140.3%;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  width: 479px;
+}
+
+.instagram {
+  margin-top: 130px;
+  margin-bottom: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.instagram__img {
+  display: flex;
+  gap: 50px;
+  padding-top: 50px;
+}
+.instagram__etnodim {
+  color: var(--gray, #939694);
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.instagram__title {
+  color: var(--black, #000);
+  font-family: "Dela Gothic One";
+  line-height: 140.3%;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+.instagram__text {
+  color: var(--black, #000);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 166.188%;
+  text-transform: none;
+  width: 355px;
+  margin-top: 10px;
+}
+
+.footer {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.footer__end_desk {
+  display: block;
+}
+.footer__end_mob {
+  display: none;
+}
+.footer__time {
+  display: flex;
+  gap: 20px;
+}
+.footer__logo {
+  margin-top: 70px;
+}
+.footer__container {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+}
+.footer__list {
+  color: var(--black, #000);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 166.188%;
+}
+.footer__list {
+  color: var(--black, #000);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 166.188%;
+  text-transform: none;
+}
+.footer__list_last {
+  color: #DA1F39;
+  font-weight: 700;
+  padding-top: 30px;
+}
+.footer__list li {
+  padding-bottom: 10px;
+}
+.footer__list_first {
+  text-decoration: underline;
+}
+.footer__end_desk {
+  padding-top: 64px;
+}
+.footer__cart_arrow-up {
+  position: absolute;
+}
+
+.arrow-up {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu {
+  max-width: 1440px;
+  margin-top: 30px;
+}
+.menu__one {
+  padding-left: 0;
+}
+.menu__one li {
+  padding-bottom: 25px;
+}
+.menu__one li:hover {
+  color: #000;
+}
+.menu__text {
+  color: var(--black, #000);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 166.188%;
+  text-transform: none;
+}
+.menu__text li {
+  padding-bottom: 18px;
+}
+.menu__text li:hover {
+  color: #da1f39;
+  font-weight: 700;
+}
+.menu__text_big {
+  color: #9A9A9A;
+  font-family: Dela Gothic One;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.menu__items {
+  display: none;
+}
+
+.dropdwn {
+  display: inline-block;
+  position: relative;
+}
+
+.A {
+  display: inline-block;
+  position: relative;
+  max-height: 0;
+  transition: max-height 3s;
+}
+
+.B {
+  display: none;
+  width: 1370px;
+  overflow: auto;
+}
+
+.B li a:hover {
+  color: #000;
+}
+
+.A:hover .B {
+  display: flex;
+  justify-content: space-around;
+  overflow: auto;
+}
+
+.dropdwn__content {
+  display: none;
+  position: absolute;
+  width: 1440px;
+  overflow: auto;
+  background: white;
+}
+
+.dropdwn__content li a:hover {
+  color: #000;
+}
+
+.dropdwn:hover .dropdwn__content {
+  display: block;
+  display: flex;
+  gap: 934px;
+  align-items: center;
+}
+
+.main-card__list {
+  display: flex;
+  gap: 35px;
+  margin-left: 80px;
+  padding: 0;
+  position: relative;
+}
+.main-card__text-bolt {
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 166.4%;
+}
+.main-card__list_after:after {
+  content: url("./images/Rectangle 165.png");
+  display: flex;
+  position: absolute;
+  margin-top: -3px;
+  top: 0;
+  margin-left: 52px;
+}
+.main-card__list-two:after {
+  content: url("./images/Rectangle 165.png");
+  display: flex;
+  position: absolute;
+  margin-top: -3px;
+  top: 0;
+  margin-left: 113px;
+}
+.main-card__text {
+  color: var(--black, #000);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 166.4%;
+  width: 433px;
+  margin-bottom: 15px;
+}
+.main-card__container {
+  display: flex;
+}
+.main-card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.main-card__list {
+  margin-left: 80px;
+  display: flex;
+  gap: 35px;
+  padding-left: 0;
+}
+.main-card__list-second {
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  gap: 25px;
+  color: var(--black, #000);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-weight: 300;
+}
+.main-card__list-sizes li:hover {
+  font-weight: 700;
+}
+.main-card__list-tabl {
+  text-decoration: underline;
+  color: var(--black, #000);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 166.188%;
+  text-transform: none;
+}
+.main-card__list-second li {
+  font-size: 14px;
+}
+.main-card__list-second button {
+  background: white;
+  border: none;
+}
+.main-card__list_hover li:hover {
+  font-weight: 700;
+  display: flex;
+  gap: 35px;
+  margin-left: 0;
+}
+.main-card__finished {
+  color: var(--black, #000);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 166.188%;
+  text-transform: none;
+  color: var(--red, #DA1F39);
+}
+.main-card__img {
+  display: flex;
+  flex-direction: column;
+  max-width: 720px;
+  margin-right: 118px;
+}
+.main-card__price {
+  color: #000;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 166.2%;
+  margin-top: 40px;
+}
+.main-card__photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 40px;
+  gap: 40px;
+}
+.main-card__title {
+  color: var(--black, #000);
+  font-family: "Dela Gothic One";
+  line-height: 140.3%;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  width: 434px;
+  font-size: 18px;
+  margin-top: 0;
+}
+.main-card__etnodim {
+  color: var(--gray, #939694);
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 10px;
+  margin-bottom: 0;
+}
+.main-card__button {
+  color: #fff;
+  font-family: "Raleway";
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  background: var(--red, #da1f39);
+  border: none;
+  width: 225px;
+  height: 50px;
+  padding: 15px 24px;
+  flex-shrink: 0;
+  margin-bottom: 70px;
+}
+.main-card__button_finish {
+  padding: 0;
+  width: 242px;
+}
+.main-card__text_bolt {
+  color: var(--black, #000);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 15px 0 15px 0;
+}
+.main-card__border {
+  border-top: 1px solid;
+  width: 433px;
+}
+.main-card__details details > summary {
+  list-style: none;
+}
+.main-card__details details > summary::-webkit-details-marker {
+  display: none;
+}
+.main-card__details details summary {
+  list-style-type: " ";
+}
+.main-card__details details[open] summary {
+  list-style-type: " ";
+}
+.main-card__details summary::after {
+  content: url("./images/ant-design_plus-outlined.png");
+}
+.main-card details[open] summary:after {
+  content: url("./images/bx_bx-minus.png");
+}
+
+.favorites {
+  margin-left: 80px;
+  margin-top: 130px;
+  position: relative;
+  margin-bottom: 130px;
+}
+.favorites__title {
+  display: flex;
+  color: var(--black, #000);
+  font-family: "Dela Gothic One";
+  line-height: 140.3%;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 40px;
+}
+.favorites__container {
+  display: flex;
+  gap: 50px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.favorites__svg_right {
+  position: absolute;
+  margin-left: 1309px;
+  padding-top: 35px;
+  top: 0;
+}
+.favorites__svg_left {
+  position: absolute;
+  margin-left: 1239px;
+  padding-top: 35px;
+  top: 0;
+}
+.favorites__price {
+  color: #000;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 166.2%;
+  margin: 0;
+}
+.favorites__text {
+  color: var(--black, #000);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 166.188%;
+  text-transform: none;
+}
+.favorites__img {
+  position: absolute;
+  margin: 30px;
+}
+.favorites__line-bottom {
+  display: inline;
+  position: relative;
+}
+.favorites__line-top {
+  display: inline;
+  position: absolute;
+  left: 0;
+  margin-top: 12px;
+}
+
+.products__mob_desk {
+  display: block;
+}
+.products__mob_img {
+  display: none;
+}
+.products__container {
+  display: flex;
+  margin-top: 40px;
+}
+.products__container_two {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.products__price {
+  color: #000;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 166.2%;
+}
+.products__form_text {
+  color: var(--black, #000);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 166.4%;
+}
+.products__details_mob {
+  display: none;
+}
+.products__details {
+  width: 100px;
+}
+.products__container-title {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.products__images {
+  gap: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 134px;
+  align-items: center;
+}
+.products__aside {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+  max-width: 100%;
+  gap: 15px;
+}
+.products__aside_text {
+  padding-left: 0;
+  margin-top: 0;
+}
+.products__aside_text li {
+  color: #565656;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 166.4%;
+}
+.products__aside_text li::before {
+  content: url("./images/Rectangle119.svg");
+  margin-right: 5px;
+}
+.products__aside_text-bolt {
+  color: #000;
+  font-weight: 600;
+}
+.products__title {
+  color: var(--black, #000);
+  font-family: "Dela Gothic One";
+  line-height: 140.3%;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding-left: 310px;
+}
+.products__list {
+  display: flex;
+  gap: 35px;
+  margin-left: 80px;
+  padding: 0;
+  position: relative;
+}
+.products__list_after:after {
+  content: url("./images/Rectangle 165.png");
+  display: flex;
+  position: absolute;
+  margin-bottom: 5px;
+  bottom: 0;
+  margin-left: 68px;
+}
+.products__text {
+  color: var(--black, #000);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 166.188%;
+  text-transform: none;
+}
+.products_top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 1196px;
+  gap: 397px;
+}
+.products__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 80px;
+  margin-bottom: 130px;
+  margin-top: 64px;
+  gap: 10px;
+}
+.products__bottom_link {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 600;
+}
+.products__bottom_list {
+  display: flex;
+  gap: 10px;
+  padding-left: 287px;
+}
+.products__bottom_list li {
+  color: #000;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 14px;
+  font-weight: 700;
+}
+.products__bottom_list-first a {
+  color: #B0B0B0;
+  font-variant-numeric: lining-nums proportional-nums;
+}
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  color: #565656;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-weight: 300;
+  line-height: 166.4%;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  border: 1px solid #565656;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 2px;
+  top: 1px;
+  width: 6px;
+  height: 6px;
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+}
+
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary {
+  list-style-type: " ";
+  list-style-type: " ";
+}
+summary::after {
+  content: url("./images/Vector 12.svg");
+  padding-left: 5px;
+}
+
+details[open] summary:after {
+  content: url("./images/Vector 10.svg");
+}
+
+.form_title {
+  color: #000;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 166.4%;
+}
+
+.border {
+  border: none;
+}
+
+@media all and (max-width: 375px) {
+  body {
+    margin: auto;
+    max-width: 375px;
+  }
+  .header {
+    margin: 0;
+    gap: 0;
+    justify-content: space-between;
+  }
+  .header__logo {
+    width: 95px;
+    height: 25px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__burger {
+    display: block;
+    margin-left: 10px;
+  }
+  .header__list {
+    display: none;
+  }
+  .header__list_item-mob {
+    display: flex;
+    flex-direction: row;
+    gap: 19px;
+  }
+  .menu__box {
+    overflow: scroll;
+  }
+  .menu__details {
+    position: relative;
+  }
+  .menu__details[open] .menu__summary:after {
+    content: "";
+  }
+  .menu__summary:after {
+    content: url(images/scroll\ down.svg);
+    position: absolute;
+    top: 0;
+    margin-top: 17px;
+    margin-left: 150px;
+  }
+  .menu__details[open] .menu__summary:before {
+    content: url(./images/scroll\ down2.svg);
+    position: absolute;
+    top: 0;
+    margin-left: 0;
+    margin-top: 17px;
+  }
+  .menu__details > .menu__summary {
+    list-style: none;
+  }
+  .menu__details > .menu__summary::-webkit-details-marker {
+    display: none;
+  }
+  .menu__summary::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    -moz-text-align-last: start !important;
+         text-align-last: start !important;
+  }
+  .new-collection {
+    background-image: url(./images/DSC_8575\ 1.jpg);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 400px;
+    flex-shrink: 0;
+  }
+  .new-collection__title {
+    font-size: 24px;
+    margin-top: 142px;
+    font-weight: 400;
+  }
+  .new-collection__container {
+    margin-left: 15px;
+    width: 228px;
+  }
+  .new-collection__text {
+    padding-top: 0;
+    font-size: 14px;
+  }
+  .etno {
+    overflow: hidden;
+    margin-left: 35px;
+  }
+  .etno__img_left {
+    margin-left: 0;
+    width: 94px;
+    height: 119px;
+  }
+  .etno__text {
+    font-size: 18px;
+    font-size-width: 355px;
+  }
+  .etno__img_right {
+    margin-left: 0;
+    width: 94px;
+    height: 119px;
+  }
+  .new-arrivals {
+    margin-left: 10px;
+    margin-top: 50px;
+    overflow: hidden;
+  }
+  .new-arrivals__title {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .new-arrivals__line-bottom {
+    display: none;
+  }
+  .new-arrivals__line-top {
+    display: none;
+  }
+  .capsule-collection {
+    width: 375px;
+    height: 240px;
+  }
+  .capsule-collection__image {
+    width: 143px;
+    height: 239px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-top: 21px;
+    padding-top: 0;
+  }
+  .capsule-collection__container {
+    width: 213px;
+    margin-top: 21px;
+    flex-direction: row;
+  }
+  .capsule-collection__etnodim {
+    font-size: 10px;
+  }
+  .capsule-collection__title {
+    font-size: 18px;
+  }
+  .sales {
+    margin-left: 10px;
+    margin-top: 50px;
+    overflow: hidden;
+  }
+  .sales__title {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .sales__line-bottom {
+    display: none;
+  }
+  .sales__line-top {
+    display: none;
+  }
+  .products__list {
+    display: none;
+  }
+  .products__aside {
+    display: none;
+  }
+  .products__mob {
+    display: none;
+  }
+  .products__images {
+    margin-left: 11px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  .products__container {
+    margin-top: 20px;
+  }
+  .products__container_two {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .products__container-title {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .products__title {
+    padding-left: 0;
+    font-size: 18px;
+    max-width: 375px;
+    margin-left: 83px;
+  }
+  .products__mob_img {
+    display: block;
+  }
+  .products__mob_desk {
+    display: none;
+  }
+  .products__text {
+    max-width: 167px;
+    overflow: scroll;
+    height: 40px;
+  }
+  .products__bottom {
+    margin-right: 0;
+    margin-bottom: 0;
+    justify-content: space-around;
+  }
+  .products__bottom_list {
+    display: none;
+  }
+  .products__bottom_list {
+    display: none;
+  }
+  .products__details_mob {
+    display: block;
+    left: 0;
+    margin-left: 13px;
+  }
+  .products__details_mob:open {
+    background: #FFF;
+    box-shadow: 4px 4px 6px 0px rgba(135, 135, 135, 0.25), 6px 6px 8px 0px rgba(178, 178, 178, 0.25);
+    overflow: scroll;
+  }
+  .products__form_text {
+    color: var(--black, #000);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 166.4%;
+  }
+  .products__filters {
+    display: flex;
+    position: absolute;
+    max-width: 375px;
+    gap: 110px;
+    margin-top: 10px;
+    background: #FFF;
+    box-shadow: 4px 4px 6px 0px rgba(135, 135, 135, 0.25), 6px 6px 8px 0px rgba(178, 178, 178, 0.25);
+    width: 349px;
+    height: 541px;
+    left: 0;
+    margin-left: 10px;
+  }
+  .arrow-up {
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+    margin-top: 28px;
+  }
+  .footer {
+    max-width: 375px;
+    background-color: #F4F4F4;
+  }
+  .footer__container {
+    display: flex;
+    gap: 35px;
+    position: relative;
+  }
+  .footer__list_absolute {
+    z-index: 4;
+    margin-top: 130px;
+    position: absolute;
+    padding-left: 0;
+    background-color: #F4F4F4;
+  }
+  .footer__logo {
+    margin-top: 20px;
+  }
+  .footer__list {
+    padding-left: 10px;
+  }
+  .footer__list li {
+    padding-bottom: 10px;
+  }
+  .footer__list_two {
+    width: 130px;
+  }
+  .footer__end_desk {
+    display: none;
+  }
+  .footer__end_mob {
+    display: inline;
+    padding: 0px;
+    margin: 0px;
+  }
+  .footer__time {
+    flex-wrap: wrap;
+  }
+  .main-card {
+    margin-left: 10px;
+  }
+  .main-card__etnodim {
+    display: none;
+  }
+  .main-card__title {
+    margin-top: 40px;
+  }
+  .main-card__img {
+    display: block;
+  }
+  .main-card__photos {
+    flex-wrap: nowrap;
+    gap: 10px;
+    padding-top: 10px;
+  }
+  .main-card__container {
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .main-card__list {
+    display: none;
+  }
+  .main-card__img_first {
+    overflow: hidden;
+    hwidth: 356px;
+    height: 440px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .main-card__img_second {
+    width: 133px;
+    height: 162px;
+  }
+  .main-card__img_third {
+    width: 133px;
+    height: 162px;
+  }
+  .main-card__img_fours {
+    width: 133px;
+    height: 162px;
+  }
+  .main-card__img_fifth {
+    width: 133px;
+    height: 162px;
+  }
+  .favorites {
+    margin-left: 10px;
+    margin-top: 50px;
+    overflow: hidden;
+  }
+  .favorites__title {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .favorites__line-bottom {
+    display: none;
+  }
+  .favorites__line-top {
+    display: none;
+  }
+}
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: 0.25s;
+}
+
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 334px;
+  height: 326px;
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 0;
+  list-style: none;
+  background: #FFF;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.25s;
+}
+
+.menu__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.menu__items ul {
+  display: flex;
+  padding: 0;
+  gap: 25px;
+}
+.menu__items ul li {
+  color: var(--black, #000);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 16px;
+  font-weight: 400;
+}
+.menu__box-logo {
+  margin-left: 140px;
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: var(--black, #000);
+  font-family: Dela Gothic One;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition-duration: 0.25s;
+}
+
+.menu__item:hover {
+  color: var(--red, #DA1F39);
+  font-family: Dela Gothic One;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}/*# sourceMappingURL=styles.css.map */
