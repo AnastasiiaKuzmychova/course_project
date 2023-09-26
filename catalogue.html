@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,16 +17,8 @@
 
     <header id="header" class="header">
       <nav class="header__nav">
-        <div class="dropdwn">
+        <div>
           <a  href="./catalogue.html">Каталог</a>
-          <div class="dropdwn__content">
-            <ul class="menu__one menu__text_big">
-              <li><a href="">жінкам</a></li>
-              <li><a href="">чоловікам</a></li>
-              <li><a href="">дітям</a></li>
-              <li><a href="">аксесуари</a></li>
-              <li><a href="">дім</a></li>
-            </ul>
           </div>
         </div>
 
@@ -49,9 +41,9 @@
             /></a>
             <details class="menu__details">
               <summary  class="menu__summary">
-          <a class="menu__item" href="#">Каталог</a></summary>
-       <summary class="menu__summary"><p>жінкам</p></summary>
-        <ul>
+          <a class="menu__item" href="./catalogue.html">Каталог</a></summary>
+          <summary class="menu__summary"><p>жінкам</p></summary>
+        <ul class="menu__summary_items">
 <li><a href="">Вишиті сукні</a></li>
 <li><a href="">Жіночі вишиванки</a></li>
 <li><a href="">Конструктор вишиванки</a></li>
@@ -61,10 +53,10 @@
 <li><a href="">Пальта та куртки</a></li>
 <li><a href="">Спідниці</a></li>
         </ul>
-        <p>чоловікам</p>
-        <p>дітям</p>
-        <p>аксесуари</p>
-        <p>дім</p>
+        <p class="menu__summary_text">чоловікам</p>
+        <p class="menu__summary_text">дітям</p>
+        <p class="menu__summary_text">аксесуари</p>
+        <p class="menu__summary_text">дім</p>
         
         </details>
 
@@ -72,8 +64,9 @@
           <li><a class="menu__item" href="#">Знижки</a></li>
           <li><a class="menu__item" href="#">Блог</a></li>
           <li><a class="menu__item" href="#">Про нас</a></li>
+     
          <div class="menu__items">
-            <ul>
+            <ul class="menu__items_currency">
               <li><p>UA</p></li>
               <li><p>RU</p></li>
               <li><p>EN</p></li>
@@ -93,10 +86,11 @@
             </ul>
           </div>
         </ul>
-       
+     
       </div>
+
     </div>
-      
+  
 
   <a href="./index.html"><img class="header__logo" src="./images/etnodim-logo-main-removebg-preview 1.svg" alt=""
       /></a>
@@ -125,17 +119,23 @@
   
         <li><a href="tel:+380978889292">+38 097 888 92 92</a></li>
         <li><img src="./images/ei_search.svg" alt="" /></li>
-        <li><img src="./images/Vector 3.svg" alt="" /></li>
+        <li class="header__basket"><img src="./images/Vector 3.svg" alt="" /> <img class="header__basket_img" src="./images/Ellipse 14.svg" alt=""> </li>
+        <li class="header__basket_img-text"><p>1</p></li>
       </ul>
 
-        <div class="header__list_item-mob">
-       <img src="./images/ei_search.svg" width="21" height="21" alt="" />
-        <img src="./images/Vector 3.svg" width="21" height="21"  alt="" />
+        <ul class="header__list_item-mob">
+       <li><img src="./images/ei_search.svg" width="21" height="21" alt="" /></li>
+      
+        <li class="header__basket"><img src="./images/Vector 3.svg" alt="" /> <img class="header__basket_img" src="./images/Ellipse 14.svg" alt=""> </li>
+        <li class="header__basket_img-text"><p>1</p></li>
 
-        </div>
+        </ul>
         
     </header>
 
+
+
+    <!-- Main -->
     <main>
       <section class="products">
         <ul class="products__list">
@@ -228,6 +228,17 @@
             </label></details>
 <details>
             <summary class="products__aside_text products__aside_text-bolt">Сезон</summary>
+            <label class="container"
+  >Easy collection (3)
+  <input type="checkbox" />
+  <span class="checkmark"></span>
+</label>
+
+<label class="container"
+  >Усі сезони (46)
+  <input type="checkbox" />
+  <span class="checkmark"></span>
+</label>
          </details>
            <details>
  <summary class="products__aside_text products__aside_text-bolt">
@@ -406,19 +417,20 @@
           </div>
             </div>
               <div>
-                <a  class="products__mob_desk" href=""
+                <a  class="products__mob_desk" href="./cart.html"
                   ><img
                     src="./images/55d65c9d65411d8471f00751e6baf416-2-2.png"
                     height="500"
                     width="507"
                     alt=""
                 /></a>
-                <a class="products__mob_img" href=""
+                <a class="products__mob_img" href="./cart.html"
                   ><img
                     src="./images/image1small.png"
                    
                     alt=""
                 /></a>
+                
 
                 <p class="products__text">
                   Вишиванка з рослинним орнаментом Lito
@@ -544,12 +556,13 @@
           </ul>
          
         </div>
-        <a class="arrow-up" href="#header"><img src="./images/Vector 20.svg" alt=""></a>
+       
       </section>
     
     </main>
 <!-- Footer -->
     <footer class="footer">
+      <a class="arrow-up" href="#header"><img src="./images/Vector 20.svg" alt=""></a>
       <div class="footer__logo" ><a href=""
         ><img  src="./images/etnodim-logo-main-removebg-preview 1.png" alt=""
       /></a></div>
