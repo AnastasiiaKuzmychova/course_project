@@ -1361,11 +1361,30 @@ details[open] summary:after {
   }
   .etno__text {
     font-size: 18px;
-    font-size-width: 355px;
+    width: 355px;
+    margin: 0;
   }
   .etno__img_right {
     margin-left: 0;
     width: 94px;
+    height: 119px;
+  }
+  .stuff {
+    overflow: hidden;
+    margin-left: 35px;
+    margin-top: 0;
+  }
+  .stuff__img_left {
+    margin-left: 0;
+    height: 119px;
+  }
+  .stuff__text {
+    font-size: 18px;
+    width: 355px;
+    margin: 0;
+  }
+  .stuff__img_right {
+    margin-left: 0;
     height: 119px;
   }
   .new-arrivals {
@@ -1384,8 +1403,9 @@ details[open] summary:after {
     display: none;
   }
   .capsule-collection {
-    width: 375px;
-    height: 240px;
+    background-image: url(./images/Rectangle\ 49.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   .capsule-collection__image {
     width: 143px;
@@ -1405,21 +1425,6 @@ details[open] summary:after {
   }
   .capsule-collection__title {
     font-size: 18px;
-  }
-  .sales {
-    margin-left: 10px;
-    margin-top: 50px;
-    overflow: hidden;
-  }
-  .sales__title {
-    font-size: 18px;
-    font-weight: 400;
-  }
-  .sales__line-bottom {
-    display: none;
-  }
-  .sales__line-top {
-    display: none;
   }
   .products__list {
     display: none;
@@ -1513,6 +1518,26 @@ details[open] summary:after {
     justify-content: space-around;
     height: 30px;
     margin-top: -20px;
+  }
+  .location {
+    flex-direction: column-reverse;
+    margin-top: 0;
+  }
+  .location__img_bottom {
+    width: 313px;
+    height: 229px;
+  }
+  .location__img_top {
+    width: 286px;
+    height: 187px;
+  }
+  .location__container {
+    margin-left: 15px;
+    margin-top: 20px;
+  }
+  .location__title {
+    font-size: 18px;
+    width: 325px;
   }
   .footer {
     max-width: 375px;
@@ -1755,6 +1780,13 @@ details[open] summary:after {
   }
   .drabyna {
     flex-direction: column;
+    background-image: url(./images/Rectangle\ 87.jpg);
+    background-repeat: no-repeat;
+  }
+  .drabyna__img img {
+    width: 356px;
+    position: absolute;
+    height: 180px;
   }
   .drabyna__img_bottom img {
     width: 272px;
