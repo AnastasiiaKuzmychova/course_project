@@ -223,6 +223,12 @@ li {
   background-size: cover;
   height: 650px;
 }
+.capsule-collection__mob {
+  display: none;
+}
+.capsule-collection__desk {
+  display: block;
+}
 .capsule-collection__container {
   display: flex;
   justify-content: center;
@@ -449,6 +455,12 @@ li {
   background-image: url(./images/Rectangle\ 87.png);
   height: 630px;
   margin-top: 100px;
+}
+.drabyna__desk {
+  display: block;
+}
+.drabyna__mob {
+  display: none;
 }
 .drabyna__img {
   display: flex;
@@ -1353,6 +1365,7 @@ details[open] summary:after {
   .etno {
     overflow: hidden;
     margin-left: 35px;
+    margin-bottom: 0;
   }
   .etno__img_left {
     margin-left: 0;
@@ -1406,6 +1419,24 @@ details[open] summary:after {
     background-image: url(./images/Rectangle\ 49.jpg);
     background-repeat: no-repeat;
     background-size: contain;
+    position: relative;
+    height: 500px;
+  }
+  .capsule-collection__mob {
+    display: flex;
+    width: 213px;
+    height: 239px;
+    background: white;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+  }
+  .capsule-collection__desk {
+    display: none;
   }
   .capsule-collection__image {
     width: 143px;
@@ -1414,17 +1445,24 @@ details[open] summary:after {
        object-fit: cover;
     margin-top: 21px;
     padding-top: 0;
+    position: absolute;
+    margin-left: 222px;
   }
   .capsule-collection__container {
-    width: 213px;
-    margin-top: 21px;
-    flex-direction: row;
+    width: 345px;
+    padding-left: 0;
+    margin-left: 15px;
+    background-color: unset;
   }
   .capsule-collection__etnodim {
     font-size: 10px;
   }
   .capsule-collection__title {
     font-size: 18px;
+    width: 203px;
+  }
+  .capsule-collection__text {
+    max-width: 322px;
   }
   .products__list {
     display: none;
@@ -1530,10 +1568,15 @@ details[open] summary:after {
   .location__img_top {
     width: 286px;
     height: 187px;
+    margin-right: 62px;
+    margin-top: 0;
   }
   .location__container {
     margin-left: 15px;
     margin-top: 20px;
+  }
+  .location__container_img {
+    align-items: center;
   }
   .location__title {
     font-size: 18px;
@@ -1763,6 +1806,9 @@ details[open] summary:after {
     margin-bottom: 285px;
     bottom: 0;
   }
+  .sales__text {
+    margin-bottom: 0;
+  }
   .philosophy {
     flex-direction: column;
   }
@@ -1774,9 +1820,23 @@ details[open] summary:after {
     width: 185px;
     height: 219px;
   }
+  .philosophy__img_top {
+    margin-left: 107px;
+    margin-top: 30px;
+  }
   .philosophy__container {
     width: 100%;
     padding-left: 0;
+    margin-top: 48px;
+    margin-left: 10px;
+    width: 350px;
+  }
+  .philosophy__title {
+    font-size: 18px;
+  }
+  .philosophy__etnodim {
+    font-size: 10px;
+    margin-bottom: 0;
   }
   .drabyna {
     flex-direction: column;
@@ -1787,6 +1847,9 @@ details[open] summary:after {
     width: 356px;
     position: absolute;
     height: 180px;
+    margin-left: 15px;
+    margin-top: 20px;
+    position: unset;
   }
   .drabyna__img_bottom img {
     width: 272px;
@@ -1796,12 +1859,41 @@ details[open] summary:after {
     width: 185px;
     height: 219px;
   }
+  .drabyna__img {
+    margin: 0;
+    max-width: 375px;
+  }
   .drabyna__container {
-    width: 100%;
+    width: 345px;
     padding-left: 0;
+    margin-left: 15px;
+    background-color: unset;
+  }
+  .drabyna__desk {
+    display: none;
+  }
+  .drabyna__mob {
+    display: flex;
+    width: 178px;
+    height: 160px;
+    background: white;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .drabyna__title {
+    font-size: 18px;
+  }
+  .drabyna__etnodim {
+    font-size: 10px;
+    padding-bottom: 0;
   }
   .instagram {
     margin-bottom: 0;
+    margin-top: 50px;
   }
   .instagram__img {
     display: flex;
