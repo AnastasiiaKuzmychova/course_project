@@ -572,6 +572,12 @@ li
     display: flex
     flex-direction: column
     align-items: center
+
+    &__items
+     display: flex
+     flex-direction: column
+     align-items: center
+    
    
     &__img
         display: flex
@@ -587,7 +593,7 @@ li
 
     &__text
         @include main-text
-        width: 355px
+        width: 320px
         margin-top: 10px
 
 
@@ -945,8 +951,11 @@ li
         &__mob_desk
             display: block
 
-        &__mob_img
-            display: none
+        &__mob_desk img
+            width: 507px
+            height: 500px
+
+     
 
         &__container
             display: flex
@@ -1089,7 +1098,33 @@ li
             color: #B0B0B0
             font-variant-numeric: lining-nums proportional-nums
 
-        
+// Basket
+.basket
+    display: flex
+    flex-wrap: wrap
+    margin-left: 80px
+
+
+    &__price
+            @include price
+
+    &__button
+         @include button
+
+    &__text
+        @include main-text 
+        width: 625px
+         
+    &__buttons
+
+        display: flex
+        align-items: flex-end
+        gap: 30px
+
+
+      
+
+    
   
 /* The container */
 .container 
@@ -1360,10 +1395,10 @@ details[open] summary:after
 
   .stuff
       display: flex
-      justify-content: space-between
+      justify-content: space-around
       align-items: center
       position: relative
-      margin: 0 0 0 15px
+      margin-top: 50px
    
 
       &__text
@@ -1391,7 +1426,7 @@ details[open] summary:after
     
 
       &__img_right
-        margin-right: 7px
+        margin-right: -7px
         width: 134px
         height: 89px
     
@@ -1409,12 +1444,12 @@ details[open] summary:after
 
          &__mob
             display: flex
-            width: 213px
+            width: 237px
             height: 239px
             background: white
             position: absolute
             margin-left: 15px
-            margin-top: 20px
+            margin-top: 40px
             flex-direction: column
             align-items: center
             justify-content: center
@@ -1426,20 +1461,20 @@ details[open] summary:after
            display: none
 
          &__image
-            width: 143px
+            width: 158px
             height: 239px
             object-fit: cover
-            margin-top: 21px
+            margin-top: 40px
             padding-top: 0
             position: absolute
-            margin-left: 222px
+            margin-left: 235px
 
 
          &__container 
-          width: 345px
+          width: 395px
           padding-left: 0
-          margin-left: 15px
-          background-color: unset
+          margin-left: 0
+          background-color: white
          &__etnodim
             font-size: 10px
 
@@ -1464,10 +1499,10 @@ details[open] summary:after
             display: none
 
         &__images
-            margin-left: 11px
+            margin: 10px
             display: flex
             flex-wrap: wrap
-            justify-content: flex-end
+            justify-content: space-around
             gap: 20px
 
         &__container
@@ -1487,18 +1522,22 @@ details[open] summary:after
         &__title
             padding-left: 0
             font-size: 18px
-            max-width: 375px
-            margin-left: 110px
+            max-width: 425px
+            margin-left: 143px
            
 
-        &__mob_img
-            display: block
+       
+
+        &__mob_desk img
+                width: 190px
+                height: 230px
+                object-fit: cover
 
         &__mob_desk
-            display: none
+            display: block
         
         &__text
-            max-width: 167px
+            max-width: 190px
             overflow: scroll
             height: 40px
         &__bottom
@@ -1557,12 +1596,12 @@ details[open] summary:after
       
 
       &__img_bottom
-        width: 313px
-        height: 229px
+        width: 335px
+        height: 235px
 
       &__img_top
-        width: 286px
-        height: 187px
+        width: 305px
+        height: 200px
         margin-right: 62px
         margin-top: 0
 
@@ -1633,7 +1672,7 @@ details[open] summary:after
     &__arrows
         display: flex
         margin-top: 20px
-        margin-left: 230px
+        margin-left: 290px
         gap: 10px
    
 
@@ -1691,9 +1730,9 @@ details[open] summary:after
 
     &__img_first
             overflow: hidden
-            hwidth: 356px
-            height: 440px
-            object-fit: contain
+            height: 490px
+            width: 425px
+           
 
     &__img_second 
 
@@ -1721,7 +1760,7 @@ details[open] summary:after
 
   .favorites
 
-        margin-left: 10px
+        margin-left: 38px
         margin-top: 50px
         overflow: hidden
         margin-bottom: 0
@@ -1757,7 +1796,7 @@ details[open] summary:after
             content: url(./images/scroll\ down4.svg)
         
             position: absolute
-            right: 0
+            right: 25px
             margin-bottom: 285px
             bottom: 0
 
@@ -1807,9 +1846,11 @@ details[open] summary:after
     
   .sales
 
-        margin: 50px 0 50px 30px
+        margin-left: 38px
+        margin-top: 50px
         overflow: hidden
-        max-width: 375px
+        margin-bottom: 0
+        position: relative
     
         &__title
          
@@ -1886,14 +1927,18 @@ details[open] summary:after
         flex-direction: column
         background-image: url(./images/Rectangle\ 87.jpg)
         background-repeat: no-repeat
+        background-size: 100%
+        margin-top: 50px
+        align-items: center
+        height: 530px
         
 
         &__img img
-            width: 356px
+            width: 400px
             position: absolute
             height: 180px
             margin-left: 15px
-            margin-top: 20px
+            margin-top: 35px
             position: unset
 
         &__img_bottom img
@@ -1907,8 +1952,9 @@ details[open] summary:after
             
 
         &__img
+            
+            max-width: 100%
             margin: 0
-            max-width: 375px
 
         &__container 
           width: 345px
@@ -1925,8 +1971,8 @@ details[open] summary:after
             height: 160px
             background: white
             position: absolute
-            margin-left: 15px
-            margin-top: 20px
+            margin-right: 216px
+            margin-top: 35px
             flex-direction: column
             align-items: center
             justify-content: center
@@ -1936,11 +1982,9 @@ details[open] summary:after
           
         &__etnodim
             font-size: 10px
-            padding-bottom: 0
+            margin-bottom: 0
 
-        &__text
-            
-
+      
           
 
 
@@ -1956,7 +2000,7 @@ details[open] summary:after
       display: flex
       gap: 20px
       flex-wrap: wrap
-      margin-left: 10px
+      margin-left: 35px
       padding-top: 10PX
 
      &__img img
@@ -1966,6 +2010,7 @@ details[open] summary:after
      &__title
         font-size: 18px
         text-align: center
+        width: 300px
 
      &__text
         text-align: center
