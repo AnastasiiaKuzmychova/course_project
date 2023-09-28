@@ -134,6 +134,9 @@ li {
   position: relative;
   margin-bottom: 126px;
 }
+.etno__text_mob {
+  display: none;
+}
 .etno__text_white {
   color: #fff;
 }
@@ -425,7 +428,11 @@ li {
   position: relative;
   margin-top: 100px;
 }
+.stuff__text_mob {
+  display: none;
+}
 .stuff__text {
+  display: block;
   position: absolute;
   color: var(--black, #000);
   text-align: center;
@@ -1242,10 +1249,10 @@ details[open] summary:after {
   border: none;
 }
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 425px) {
   body {
     margin: auto;
-    max-width: 375px;
+    max-width: 425px;
   }
   .header {
     margin: 0;
@@ -1347,7 +1354,8 @@ details[open] summary:after {
     background-repeat: no-repeat;
     overflow: hidden;
     height: 400px;
-    flex-shrink: 0;
+    background-size: 100%;
+    margin: 0 10px 50px 10px;
   }
   .new-collection__title {
     font-size: 24px;
@@ -1363,57 +1371,74 @@ details[open] summary:after {
     font-size: 14px;
   }
   .etno {
-    overflow: hidden;
-    margin-left: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
     margin-bottom: 0;
   }
-  .etno__img_left {
-    margin-left: 0;
-    width: 94px;
-    height: 119px;
-  }
-  .etno__text {
-    font-size: 18px;
+  .etno__text_mob {
+    display: block;
     width: 355px;
-    margin: 0;
-  }
-  .etno__img_right {
-    margin-left: 0;
-    width: 94px;
-    height: 119px;
-  }
-  .stuff {
-    overflow: hidden;
-    margin-left: 35px;
-    margin-top: 0;
-  }
-  .stuff__img_left {
-    margin-left: 0;
-    height: 119px;
-  }
-  .stuff__text {
-    font-size: 18px;
-    width: 355px;
-    margin: 0;
-  }
-  .stuff__img_right {
-    margin-left: 0;
-    height: 119px;
-  }
-  .new-arrivals {
-    margin-left: 10px;
-    margin-top: 50px;
-    overflow: hidden;
-  }
-  .new-arrivals__title {
+    position: absolute;
+    color: var(--black, #000);
+    text-align: center;
+    font-family: "Dela Gothic One";
     font-size: 18px;
     font-weight: 400;
+    line-height: 140.3%;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-left: 35px;
   }
-  .new-arrivals__line-bottom {
+  .etno__img_left {
+    margin-left: 62px;
+    width: 94px;
+    height: 119px;
+    margin-bottom: 136px;
+  }
+  .etno__text {
     display: none;
   }
-  .new-arrivals__line-top {
+  .etno__img_right {
+    width: 94px;
+    height: 119px;
+    margin-right: 62px;
+    margin-top: 97px;
+  }
+  .stuff {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0 0 0 15px;
+  }
+  .stuff__text {
     display: none;
+  }
+  .stuff__text_mob {
+    display: block;
+    width: 350px;
+    position: absolute;
+    color: var(--black, #000);
+    text-align: center;
+    font-family: "Dela Gothic One";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140.3%;
+    text-transform: uppercase;
+    margin-top: 3px;
+  }
+  .stuff__img_left {
+    margin-left: -3px;
+    width: 134px;
+    height: 78px;
+    margin-top: 120px;
+  }
+  .stuff__img_right {
+    margin-right: 7px;
+    width: 134px;
+    height: 89px;
   }
   .capsule-collection {
     background-image: url(./images/Rectangle\ 49.jpg);
@@ -1541,7 +1566,7 @@ details[open] summary:after {
   .products__filters {
     display: flex;
     position: absolute;
-    max-width: 375px;
+    max-width: 425px;
     gap: 110px;
     margin-top: 10px;
     background: #FFF;
@@ -1583,7 +1608,6 @@ details[open] summary:after {
     width: 325px;
   }
   .footer {
-    max-width: 375px;
     background-color: #F4F4F4;
     margin-top: 50px;
   }
@@ -1737,11 +1761,9 @@ details[open] summary:after {
     bottom: 0;
   }
   .new-arrivals {
-    margin-left: 10px;
-    margin-top: 50px;
+    margin: 50px 0 50px 30px;
     overflow: hidden;
-    margin-bottom: 0;
-    position: relative;
+    max-width: 375px;
   }
   .new-arrivals__title {
     font-size: 18px;
@@ -1772,11 +1794,9 @@ details[open] summary:after {
     bottom: 0;
   }
   .sales {
-    margin-left: 10px;
-    margin-top: 50px;
+    margin: 50px 0 50px 30px;
     overflow: hidden;
-    margin-bottom: 0;
-    position: relative;
+    max-width: 375px;
   }
   .sales__title {
     font-size: 18px;
@@ -1811,6 +1831,7 @@ details[open] summary:after {
   }
   .philosophy {
     flex-direction: column;
+    margin-bottom: 50px;
   }
   .philosophy__img_bottom img {
     width: 272px;

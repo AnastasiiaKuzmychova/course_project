@@ -194,7 +194,8 @@ li
         position: relative
         margin-bottom: 126px
         
-        
+        &__text_mob
+            display: none
 
         &__text_white
             color: #fff
@@ -433,7 +434,11 @@ li
          position: relative
          margin-top: 100px
 
+         &__text_mob
+            display: none
+
          &__text
+            display: block
             position: absolute
             color: var(--black, #000)
             text-align: center
@@ -1180,10 +1185,10 @@ details[open] summary:after
 //    Mobile
 
     
-@media all and (max-width: 375px) 
+@media all and (max-width: 425px) 
   body 
     margin: auto
-    max-width: 375px
+    max-width: 425px
 
   .header
         margin: 0
@@ -1296,7 +1301,8 @@ details[open] summary:after
      background-repeat: no-repeat
      overflow: hidden
      height: 400px
-     flex-shrink: 0
+     background-size: 100%
+     margin:0 10px 50px 10px
 
      &__title
         font-size: 24px
@@ -1313,65 +1319,83 @@ details[open] summary:after
         font-size: 14px
 
   .etno
-      overflow: hidden
-      margin-left: 35px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      position: relative
       margin-bottom: 0
 
+      &__text_mob
+        display: block
+        width: 355px
+        position: absolute
+        color: var(--black, #000)
+        text-align: center
+        font-family: "Dela Gothic One"
+        font-size: 18px
+        font-weight: 400
+        line-height: 140.3%
+        text-transform: uppercase
+        margin-top: 0
+        margin-left: 35px
+
+         
+       
       &__img_left
-        margin-left: 0
+        margin-left: 62px
         width: 94px
         height: 119px
+        margin-bottom: 136px
        
       &__text
        
-        font-size: 18px
-        width: 355px
-        margin: 0
+        display: none
+        
 
       &__img_right
-        margin-left: 0
         width: 94px
         height: 119px
+        margin-right: 62px
+        margin-top: 97px
 
   .stuff
-      overflow: hidden
-      margin-left: 35px
-      margin-top: 0
+      display: flex
+      justify-content: space-between
+      align-items: center
+      position: relative
+      margin: 0 0 0 15px
+   
+
+      &__text
+        display: none
+
+      &__text_mob
+        display: block
+        width: 350px
+        position: absolute
+        color: var(--black, #000)
+        text-align: center
+        font-family: "Dela Gothic One"
+        font-size: 18px
+        font-weight: 400
+        line-height: 140.3%
+        text-transform: uppercase
+        margin-top: 3px
+        
 
       &__img_left
-        margin-left: 0
-        
-        height: 119px
-       
-      &__text
-       
-        font-size: 18px
-        width: 355px
-        margin: 0
+            margin-left: -3px
+            width: 134px
+            height: 78px
+            margin-top: 120px
+    
 
       &__img_right
-        margin-left: 0
-       
-        height: 119px
+        margin-right: 7px
+        width: 134px
+        height: 89px
     
-  .new-arrivals
 
-         margin-left: 10px
-         margin-top: 50px
-         overflow: hidden
-    
-         &__title
-         
-          font-size: 18px
-          font-weight: 400
-           
-
-         &__line-bottom
-            display: none
-
-
-         &__line-top
-            display: none
 
 
   .capsule-collection
@@ -1508,7 +1532,7 @@ details[open] summary:after
         &__filters
             display: flex
             position: absolute
-            max-width: 375px
+            max-width: 425px
             gap: 110px
             margin-top: 10px
             background: #FFF
@@ -1556,7 +1580,7 @@ details[open] summary:after
 
   .footer
     
-      max-width: 375px 
+      
       background-color: #F4F4F4
       margin-top: 50px
     
@@ -1740,11 +1764,10 @@ details[open] summary:after
 
   .new-arrivals
 
-        margin-left: 10px
-        margin-top: 50px
+        margin: 50px 0 50px 30px
         overflow: hidden
-        margin-bottom: 0
-        position: relative
+        max-width: 375px
+
     
         &__title
          
@@ -1784,11 +1807,9 @@ details[open] summary:after
     
   .sales
 
-        margin-left: 10px
-        margin-top: 50px
+        margin: 50px 0 50px 30px
         overflow: hidden
-        margin-bottom: 0
-        position: relative
+        max-width: 375px
     
         &__title
          
@@ -1830,6 +1851,7 @@ details[open] summary:after
   .philosophy
 
         flex-direction: column
+        margin-bottom: 50px
 
         &__img_bottom img
             width: 272px
